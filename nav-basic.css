@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: Helvetica;
+}
+a{
+  text-decoration: none;
+}
+
+/*---*/
+
+/*
+  Nav styles
+*/
+
+nav {
+  width: 100%;
+  position: relative;
+  height: 4rem;
+  background-color: #ddd;
+}
+.nav-cont {
+  max-width: 68.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-cont::before ,
+.nav-cont::after {
+  display: table;
+  clear: both;
+}
+.nav-left {
+  float: left;
+}
+.nav-right {
+  float: right;
+}
+.nav-list {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  height: 4rem;
+  /*line-height: 4rem;*/
+}
+.nav-item a {
+  display: table-cell;
+  height: 4rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: #777;
+  position: relative;
+  transition: all 0.5s linear;
+}
+.nav-item a:hover, .nav-item a:focus {
+  color: #222;
+}
+.nav-item .nav-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-left  .nav-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav-right  .nav-item:not(:first-child) {
+  margin-left: 2rem;
+  text-align: right;
+}

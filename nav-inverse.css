@@ -1,0 +1,10 @@
+.nav-inverse {
+  background-color: #222;
+}
+
+.nav-inverse .nav-item a {
+  color: #aaa;
+}
+.nav-inverse .nav-item a:hover, .nav-inverse .nav-item a:focus{
+  color: #fff;
+}
